@@ -1,0 +1,89 @@
+<!-- сообщаем браузеру, как обрабатывать страницу -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <title>Стилизация и отправка формы</title>
+  <style type="text/css">
+    
+  </style>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="form">
+    <form action="#" id="form" class="form__body">
+      <h1 class="form__title">Form Name</h1>
+      <div class="form__item">
+        <label for="formName" class="form__label">Name*:</label>
+        <input type="text" id="formName" name="name" class="form__input _req">
+      </div>
+      <div class="form__item">
+        <label for="formEmail" class="form__label">Email*:</label>
+        <input type="text" id="formEmail" name="email" class="form__input _req _email">
+      </div>
+      <div class="form__item">
+        <div class="form__label">Selection of point:</div>
+        <div class="options">
+          <div class="options__item">
+            <input type="radio" id="formFirst" value="first" name="choose" class="options__input" checked>
+            <label for="formFirst" class="options__label"><span>First point</span></label>
+          </div>
+          <div class="options__item">
+            <input type="radio" id="formSecond" value="second" name="choose" class="options__input" >
+            <label for="formSecond" class="options__label"><span>Second point</span></label>
+          </div>
+          <div class="options__item">
+            <input type="radio" id="formThird" value="third" name="choose" class="options__input" >
+            <label for="formThird" class="options__label"><span>Third point</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="form__item">
+        <label for="formMessage" id="formMessage" class="form__label">Message:</label>
+        <textarea name="message" id="formMessage" class="form__input"></textarea>
+      </div>
+      <div class="form__item">
+        <div class="form__label">Selection from drop-down list</div>
+        <select name="dropdown" id="formDropDown" class="drop-down__select">
+          <option value="first">first</option>
+          <option value="second">second</option>
+          <option value="third">third</option>
+          <option value="fourth">fourth</option>
+          <option value="fifth">fifth</option>
+        </select>
+      </div>
+      <div class="form__item">
+        <div class="form__label">Uploading the image</div>
+        <div class="file">
+          <div class="file__item">
+              <input type="file" id="formImage" class="file__input" accept=".jpg, .png, .gif" name="image">
+              <div class="file__button">Choose image</div>
+          </div>
+          <div id="formPreview" class="file__preview">
+          </div>
+        </div>
+      </div>
+      <div class="form__item">
+        <div class="checkbox">
+          <input type="checkbox" checked name="checkbox" id="checkbox" class="checkbox__input _req">
+          <label for="checkbox" class="checkbox__label"><span>I agree for everything*</span></label>
+        </div>
+      </div>
+      <button type="submit" class="form__button">SEND</button>
+      
+    </form>
+  </div>
+</div>
+  
+<script src="/js/scripts.js"></script>  
+</body>
+
+</html>
